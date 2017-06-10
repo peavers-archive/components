@@ -38,7 +38,7 @@ export function openScreenshotsBucket() {
     projectId: 'material2-screenshots',
     credentials: {
       client_email: '***REDACTED-EMAIL***',
-      private_key: decode(process.env['MATERIAL2_SCREENSHOT_FIREBASE_KEY'])
+      private_key: decode(process.env['MATERIAL2_SCREENSHOT_FIREBASE_SERVICE_KEY'])
     },
   });
 
