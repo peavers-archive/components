@@ -19,7 +19,7 @@ export function openFirebaseDashboardApp() {
       client_email: '***REDACTED-EMAIL***',
       // In Travis CI the private key will be incorrect because the line-breaks are escaped.
       // The line-breaks need to persist in the service account private key.
-      private_key: decode(process.env['MATERIAL2_BOARD_FIREBASE_SERVICE_KEY'])
+      private_key: decode(process.env['MATERIAL2_BOARD_FIREBASE_SERVICE_KEY']!)
     }),
   });
 }
@@ -38,7 +38,7 @@ export function openScreenshotsBucket() {
     projectId: 'material2-screenshots',
     credentials: {
       client_email: '***REDACTED-EMAIL***',
-      private_key: decode(process.env['MATERIAL2_SCREENSHOT_FIREBASE_KEY'])
+      private_key: decode(process.env['MATERIAL2_SCREENSHOT_FIREBASE_KEY']!)
     },
   });
 
