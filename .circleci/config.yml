@@ -133,7 +133,6 @@ jobs:
     environment:
       BROWSER_STACK_USERNAME: "***REDACTED***"
       BROWSER_STACK_ACCESS_KEY: "***REDACTED***"
-    parallelism: 2
     steps:
       - *checkout_code
       - *restore_cache
